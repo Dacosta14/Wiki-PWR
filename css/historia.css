@@ -1,111 +1,177 @@
-body{
-    margin:0;
-    font-family:Arial, Helvetica, sans-serif;
-    background-image:url("../imagens/historia.jpg");
-    background-size:cover;
-    background-attachment:fixed;
-    color:white;
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("../imagens/historia.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
 }
 
-header{
-    position:fixed;
-    top:0;
-    width:100%;
-    z-index:1000;
+/* escurece o fundo */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.50);
+    z-index: -1;
 }
 
-nav{
-    display:flex;
-    justify-content:center;
-    margin-top:20px;
+/* HEADER */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 18px 0;
 }
 
-.Menu{
-    list-style:none;
-    display:flex;
-    padding:0;
-    margin:0;
-    background:#228B22;
-    border:4px solid black;
-    border-radius:10px;
-    overflow:hidden;
+nav {
+    display: flex;
+    justify-content: center;
 }
 
-.Menu li{
-    border-right:2px solid black;
+/* MENU */
+.Menu {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+
+    background: linear-gradient(
+        135deg,
+        #228B22,
+        #2e9d2e,
+        #145214
+    );
+
+    border: 2px solid black;
+    border-radius: 14px;
+    overflow: hidden;
+
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.45);
 }
 
-.Menu li:last-child{
-    border-right:none;
+.Menu li {
+    border-right: 1px solid rgba(0, 0, 0, 0.35);
 }
 
-.Menu a{
-    display:block;
-    padding:15px 20px;
-    text-decoration:none;
-    color:white;
-    font-weight:bold;
+.Menu li:last-child {
+    border-right: none;
 }
 
-.Menu a:hover{
-    background:black;
+.Menu a {
+    display: block;
+    padding: 16px 24px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
-
-main{
-    margin-top:120px;
-    padding:30px;
+.Menu a:hover {
+    background: rgba(0, 0, 0, 0.35);
+    color: #caff9d;
 }
 
-.banner{
-    background:rgba(0,0,0,0.7);
-    padding:30px;
-    border-radius:15px;
-    text-align:center;
+/* MAIN */
+main {
+    margin-top: 130px;
+    padding: 35px;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.banner h1{
-    font-size:50px;
-    color:#7CFC00;
+/* BANNER */
+.banner {
+    background: rgba(0, 0, 0, 0.72);
+    padding: 35px;
+    border-radius: 16px;
+    text-align: center;
+
+    border: 1px solid rgba(124, 252, 0, 0.25);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.45);
 }
 
-.conteudo{
-    margin-top:30px;
-    background:rgba(0,0,0,0.7);
-    padding:30px;
-    border-radius:15px;
+.banner h1 {
+    margin: 0;
+    font-size: 52px;
+    color: #7CFC00;
+    text-shadow: 0 0 12px rgba(124, 252, 0, 0.35);
 }
 
-.conteudo h2{
-    color:#7CFC00;
+.banner p {
+    margin-top: 12px;
+    font-size: 18px;
+    line-height: 1.6;
 }
 
-.conteudo ul{
-    padding-left:20px;
+/* CONTEÚDO */
+.conteudo {
+    margin-top: 30px;
+    background: rgba(0, 0, 0, 0.72);
+    padding: 35px;
+    border-radius: 16px;
+
+    border: 1px solid rgba(124, 252, 0, 0.20);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.4);
 }
 
-@media(max-width:768px){
-
-.Menu{
-    flex-direction:column;
-    width:90%;
+.conteudo h2 {
+    color: #7CFC00;
+    margin-top: 28px;
+    border-left: 5px solid #7CFC00;
+    padding-left: 12px;
 }
 
-.Menu li{
-    border-right:none;
-    border-bottom:2px solid black;
+.conteudo h2:first-child {
+    margin-top: 0;
 }
 
-.Menu li:last-child{
-    border-bottom:none;
+.conteudo p,
+.conteudo li {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #f0f0f0;
 }
 
-.banner h1{
-    font-size:36px;
+.conteudo ul {
+    padding-left: 24px;
 }
 
-main{
-    padding:15px;
-}
+/* RESPONSIVO */
+@media (max-width: 768px) {
 
+    .Menu {
+        flex-direction: column;
+        width: 92%;
+    }
+
+    .Menu li {
+        border-right: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.35);
+    }
+
+    .Menu li:last-child {
+        border-bottom: none;
+    }
+
+    .Menu a {
+        text-align: center;
+    }
+
+    main {
+        margin-top: 165px;
+        padding: 18px;
+    }
+
+    .banner h1 {
+        font-size: 38px;
+    }
+
+    .banner,
+    .conteudo {
+        padding: 22px;
+    }
 }
