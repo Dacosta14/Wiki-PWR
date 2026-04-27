@@ -1,4 +1,4 @@
-# 🎮 MineResumo
+#  MineResumo
 
 MineResumo é uma wiki temática sobre o jogo **Minecraft**, desenvolvida em **HTML** e **CSS**, com o objetivo de reunir informações importantes de forma organizada, visual e acessível.
 
@@ -6,9 +6,9 @@ O projeto foi criado como trabalho acadêmico e busca auxiliar jogadores inician
 
 ---
 
-## 📚 Páginas do Projeto
+## Páginas do Projeto
 
-### 🏠 Home
+###  Home
 
 Página inicial com apresentação da wiki e navegação principal.
 
@@ -16,24 +16,24 @@ Página inicial com apresentação da wiki e navegação principal.
 
 Conta a trajetória do Minecraft desde sua criação até se tornar um dos jogos mais populares do mundo.
 
-### 🔥 Nether
+###  Nether
 
 Explica a dimensão Nether, como acessá-la, criaturas presentes, recursos raros e curiosidades.
 
-### 🐾 Pets
+###  Pets
 
 Informações sobre animais domesticáveis no jogo, como gatos, lobos e cavalos.
 
 ---
 
-## 💻 Tecnologias Utilizadas
+##  Tecnologias Utilizadas
 
 * HTML5
 * CSS3
 
 ---
 
-## 🎯 Objetivo do Projeto
+##  Objetivo do Projeto
 
 * Praticar desenvolvimento web front-end
 * Estruturar múltiplas páginas interligadas
@@ -43,7 +43,7 @@ Informações sobre animais domesticáveis no jogo, como gatos, lobos e cavalos.
 
 ---
 
-## 🎨 Recursos Visuais
+##  Recursos Visuais
 
 * Menu fixo de navegação
 * Fundos personalizados por página
@@ -54,7 +54,7 @@ Informações sobre animais domesticáveis no jogo, como gatos, lobos e cavalos.
 
 ---
 
-## 📂 Estrutura de Pastas
+##  Estrutura de Pastas
 
 ```bash
 MineResumo/
@@ -75,7 +75,7 @@ MineResumo/
 
 ---
 
-## 🚀 Como Executar
+## Como Executar
 
 1. Baixe ou clone este repositório
 2. Abra a pasta do projeto
@@ -83,7 +83,7 @@ MineResumo/
 
 ---
 
-## 📌 Melhorias Futuras
+##  Melhorias Futuras
 
 * Adicionar JavaScript interativo
 * Mais páginas de mobs e biomas
