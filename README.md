@@ -20,9 +20,6 @@ Conta a trajetória do Minecraft desde sua criação até se tornar um dos jogos
 
 Explica a dimensão Nether, como acessá-la, criaturas presentes, recursos raros e curiosidades.
 
-###  Pets
-
-Informações sobre animais domesticáveis no jogo, como gatos, lobos e cavalos.
 
 ---
 
@@ -62,13 +59,11 @@ MineResumo/
 │   ├── index.html
 │   ├── historia.html
 │   ├── nether.html
-│   └── pets.html
 │
 │── css/
 │   ├── home.css
 │   ├── historia.css
 │   ├── nether.css
-│   └── pets.css
 │
 │── imagens/
 ```
